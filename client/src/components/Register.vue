@@ -20,11 +20,6 @@ export default {
       password: '123'
     }
   },
-  // watch: { // this is watching the email input's value. when it changes, it will be logged out to the console
-  //   email (value) {
-  //     console.log('Email has changed value', value)
-  //   }
-  // },
   methods: {
     async register () {
       const response = await AuthenticationService.register({
@@ -33,9 +28,6 @@ export default {
       })
       console.log(response.data)
     }
-    // register () {
-    //   console.log('register button was clicked', this.email, this.password)
-    // }
   }
 }
 </script>
